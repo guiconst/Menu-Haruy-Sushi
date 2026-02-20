@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <title>Haruy Sushi</title>
+</head>
+
+<body>
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <!-- LOGO -->
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./assets/images/logo.png" alt="Logo Haruy Sushi" class="h-8 w-auto">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#"
+                            class="py-4 px-2 text-red-600 border-b-4 border-red-600 font-semibold">Início</a>
+                        <a href="#cardapio"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-red-600 transition duration-300">Cardápio</a>
+                        <a href="#"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-red-600 transition duration-300">Sobre</a>
+                        <a href="#"
+                            class="py-4 px-2 text-gray-500 font-semibold hover:text-red-600 transition duration-300">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="btn-mobile" class="outline-none mobile-menu-button">
+                        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 hover:text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 hover:text-purple-600 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu md:hidden" id="mobile-menu">
+            <ul>
+                <li><a href="#" class="block text-sm px-2 py-4 text-white bg-red-600 font-semibold">Início</a></li>
+                <li><a href="#cardapio" class="block text-sm px-2 py-4 text-gray-500 hover:text-red-600">Cardápio</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 text-gray-500 hover:text-red-600">Sobre</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 text-gray-500 hover:text-red-600">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="banner" aria-labelledby="slogan">
+            <div class="coluna">
+                <h2 id="slogan">O verdadeiro sabor da cozinha japonesa</h2>
+                <p><a class="botao" href="#cardapio">Veja o Cardápio</a></p>
+            </div>
+            <figure>
+                <img src="./assets/images/banner.png" alt="Banner Haruy Sushi">
+            </figure>
+        </section>
+
+        <section class="cardapio" id="cardapio">
+            <h1>Cardápio</h1>
+
+            <h2 class="cardapio-categoria">Sushi &amp; Sashimi</h2>
+
+            <div>
+                <article class="cardapio-item">
+                    <h3 class="cardapio-nome">Combinado Sushi</h3>
+                    <p class="cardapio-preco">R$ 99,90</p>
+                    <p class="cardapio-descricao">10 Sashimis Variados, 10 Uramakis Filadélfia e 10 Uramakis</p>
+                </article>
+
+                <article class="cardapio-item">
+                    <h3 class="cardapio-nome">Combinado Hot</h3>
+                    <p class="cardapio-preco">R$ 79,90</p>
+                    <p class="cardapio-descricao">1 Temaki Variado, 10 Uramakis Filadélfia e 10 Hot Filadélfia</p>
+                </article>
+
+                <article class="cardapio-item">
+                    <h3 class="cardapio-nome">Combo de Pombo</h3>
+                    <p class="cardapio-preco">R$ 19,90</p>
+                    <p class="cardapio-descricao">Pombo Frito</p>
+                </article>
+
+                <article class="cardapio-item">
+                    <h3 class="cardapio-nome">Espeto de Gato</h3>
+                    <p class="cardapio-preco">R$ 49,90</p>
+                    <p class="cardapio-descricao">Espetinhos de Gato</p>
+                </article>
+            </div>
+
+            <h2 class="cardapio-categoria">Bebidas</h2>
+
+            <article class="cardapio-item">
+                <h3 class="cardapio-nome">Corote</h3>
+                <p class="cardapio-preco">R$ 5,90</p>
+                <p class="cardapio-descricao">Bebida Alcoólica Corote 500ml <strong>+18</strong></p>
+            </article>
+
+            <article class="cardapio-item">
+                <h3 class="cardapio-nome">Água</h3>
+                <p class="cardapio-preco">R$ 4,90</p>
+                <p class="cardapio-descricao">Água Mineral 500ml</p>
+            </article>
+
+            <article class="cardapio-item">
+                <h3 class="cardapio-nome">Refrigerante</h3>
+                <p class="cardapio-preco">R$ 7,90</p>
+                <p class="cardapio-descricao">Lata de Refrigerante 350ml</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <h3>Haruy Sushi</h3>
+        <address>Rua Prof. Toledo, 500, centro - Sorocaba</address>
+        <p>Contato: (15) 98765-4321</p>
+        <p>Aberto todos os dias das 14h às 23h</p>
+    </footer>
+
+    <a href="https://wa.me/5515987654321" target="_blank" class="Link-whatsapp" aria-label="WhatsApp Haruy Sushi">
+        <img src="./assets/images/whatsapp.png" alt="WhatsApp Haruy Sushi">
+    </a>
+    <script>
+        // seleciona o botao e o menu
+        const btn = document.querySelector('#btn-mobile');
+        const menu = document.querySelector('#mobile-menu');
+        const hamburgerIcon = document.querySelector('#hamburger-icon');
+        const closeIcon = document.querySelector('#close-icon');
+
+        // adiciona um evento de clique no botao
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            hamburgerIcon.classList.toggle("hidden");
+            closeIcon.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
